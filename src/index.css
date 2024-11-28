@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.feature-card {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.search-bar-container {
+  z-index: 50;
+}
+
+.stack-cards {
+  position: relative;
+  width: 100%;
+  bottom:100px
+}
+
+.stack-cards__item {
+  position: sticky;
+  top: 5rem;
+  /* Adjust for space between the search bar and cards */
+  transform-origin: center top;
+  transition: transform 0.3s ease, z-index 0s;
+  will-change: transform;
+  opacity: 1;
+  /* Ensure all cards are visible */
+  z-index: 0;
+  /* Default z-index */
+}

@@ -1,0 +1,141 @@
+/* General Footer Styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #19525A;
+    color: white;
+}
+
+/* Links Section */
+footer .links-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+/* Footer Link Styles */
+footer .footer-link {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-link h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer .footer-link .divider {
+    margin-top: 0.25rem;
+    width: 100%;
+    border-top: 2px solid white;
+}
+
+footer .footer-link ul {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-link ul li {
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+}
+
+footer .footer-link ul li .with-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .footer-link ul li .with-line .vertical-line {
+    height: 1.25rem;
+    width: 1px;
+    background-color: white;
+}
+
+/* Social Section */
+footer .social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+footer .social-section h2 {
+    font-size: 1rem;
+}
+
+footer .social-section .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer .social-section .social-icons img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+/* Divider */
+footer .footer-divider {
+    margin-top: 2rem;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Bottom Section */
+footer .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+footer .bottom-section nav {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+footer .bottom-section nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .bottom-section nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    /* Adjust links and social section for larger screens */
+    footer .links-section {
+        gap: 1.5rem;
+    }
+
+    footer .social-section {
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    footer .social-section .social-icons {
+        margin-top: 0;
+        margin-left: 1.5rem;
+    }
+
+    footer .bottom-section {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    footer .bottom-section nav {
+        margin-top: 0;
+    }
+}
